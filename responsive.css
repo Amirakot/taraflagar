@@ -1,0 +1,213 @@
+@media (max-width: 1150px) {
+  .card {
+    width: 45%;
+  }
+
+  .box {
+    width: 80%;
+    display: flex;
+  }
+}
+@media (max-width: 944px) {
+
+html {
+    font-size: 13px;
+  }
+
+
+/* @media (max-width:877px){
+  .container{
+        width: 85%;
+        margin: 0 auto;
+        margin-left:50px ;
+    }
+      
+      .logo{
+      margin-right: 5px;
+      }
+      li{
+        padding: 5px;
+      }
+      .doted{
+        width: 50px;
+      } */
+/* =========== below 944px (tablets) ================== */
+@media (max-width: 944px) {
+  html {
+    font-size: 13px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .section__padding {
+    padding-bottom: 150px;
+  }
+
+  .nav__bar {
+    padding-top: 25px;
+  }
+
+  .banner-section{
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+
+  .banner-content {
+    margin-bottom: 20px;
+  }
+
+  .banner-image img {
+    width: 70%;
+  }
+
+  .navbar__menu {
+    display: flex;
+  }
+
+  .links,
+  .healthcare__provider,
+  .download__app {
+    flex-direction: column;
+  }
+
+  .links .show {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    height: 400px;
+    background-color: var(--main-color);
+    transition: all 0.3s ease-in-out;
+    padding: 50px;
+    font-size: 2rem;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .links a,
+  .links a.active {
+    color: var(--white);
+  }
+
+  .links a:hover {
+    letter-spacing: 1.2px;
+    color: var(--white);
+  }
+
+  .section__heading.text__left {
+    text-align: center;
+  }
+
+  .section__heading.section__heading.text__left h2::before {
+    left: 50%;
+  }
+
+  .background__img {
+    display: none;
+  }
+
+  .testimonials {
+    padding: 30px 40px;
+  }
+
+  .testi__wrapper {
+    gap: 20px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .copyright,
+  .copyright p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .company,
+  .helo,
+  .region {
+    margin-right: 120px;
+  }
+}}
+
+@media (max-width: 704px) {
+  .card {
+    width: 90%;
+    text-align: center;
+  }
+
+  .healthcare__provider,
+  .download__app,
+  .testi__wrapper,
+  .testi__wrapper-img {
+    flex-direction: column;
+  }
+  .links{opacity: 1;}
+
+  .testimonials {
+    text-align: center;
+  }
+
+  .box {
+    width: 95%;
+  }
+
+  .company,
+  .helo,
+  .region {
+    margin-right: 100px;
+  }
+}
+
+
+/* =========== mobile device max width 544px ================== */
+@media (max-width: 544px) {
+    .container{
+        width: 90%;
+        margin-left: 100px;
+    }
+  
+    .navbar__menu{
+        display: flex;
+    }
+
+
+    .banner-image{
+        display: none;
+    }
+.banner{
+    font-size: 13px;
+}
+   .logo{
+    position: relative;
+    top: 0;
+    left: 0;
+   }
+   h1{
+    font-weight: 700;
+    line-height: 56px;
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

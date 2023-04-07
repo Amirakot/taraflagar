@@ -1,0 +1,521 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+padding: 0;
+
+}
+body{
+    font-family: 'Mulish', sans-serif;
+}
+:root{
+--main-color: #458ff6;
+  --black: #000;
+  --white: #fff;
+  --grey: #7d7987;
+  --shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  --rgba: rgba(255, 255, 255, 0.85);
+  --linear: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+font-size: 16px;
+}
+
+
+
+
+/* nav style */
+.navigation{
+  padding-top: 3rem;;
+ align-items: center;
+  justify-content: space-between;
+}
+
+
+li{
+ 
+padding-right:2rem;
+}
+
+.active{
+  color: var(--black) ;
+  font-weight: 700;
+  
+}
+.links {
+  gap: 40px;
+}
+
+.links.show {
+  pointer-events: all;
+color:white;
+background-color:rgba(76, 129, 235, 0.5);
+  transition: all 0.5s;
+  position: relative;
+  top:90px;
+width: 100%;
+text-align: center;
+left: 20px;
+border-radius: 5px;
+
+}
+.show li{
+  line-height: 26px;
+}
+
+.links a {
+  transition: all 0.5s;
+}
+
+.links a.active,
+.links a:hover {
+  color: var(--black);
+}
+.navbar__menu {
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-image: var(--linear);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  display: none;
+/* background-color: #458ff6; */
+}
+.navbar__menu-line,
+.navbar__menu-line::before,
+.navbar__menu-line::after {
+  width: 30px;
+  height: 4px;
+  background-color: var(--white);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.navbar__menu-line::before,
+.navbar__menu-line::after {
+  content: "";
+  position: absolute;
+}
+.navbar__menu-line::before {
+  transform: translateY(-10px);
+}
+
+.navbar__menu-line::after {
+  transform: translateY(10px);
+}
+
+.navbar__menu.open .navbar__menu-line {
+  background-color: transparent;
+}
+
+.navbar__menu.open .navbar__menu-line::before {
+  transform: rotate(45deg);
+}
+.navbar__menu.open .navbar__menu-line::after {
+  transform: rotate(-45deg);
+}
+
+
+
+/* nav style */
+/* banner style */
+/* .doted{
+  position: relative;
+
+} */
+.banner{
+  margin-bottom: 190px;
+}
+.banner-section{
+  justify-content: space-between;
+}
+.banner-content h1{
+  margin-bottom: 25px;
+}
+.banner-content p{
+  margin-bottom: 45px;
+}
+.banner-image{
+ max-width:50%;
+  height: 598;
+}
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+}
+.doted{
+  position: absolute;
+  left: -5px;
+}
+
+/* banner style */
+/* ========================= start our service style =========================*/
+
+
+
+
+.services__section {
+  position: relative;
+}
+.section__heading{
+
+ text-align: center;
+}
+.bg__img {
+  background-image: url("/assests/imgs/element-service.png");
+  background-position: center right;
+}
+
+.background__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.card__container {
+  margin-top: 80px;
+  gap: 35px;
+  flex-wrap: wrap;
+  margin-bottom: 72px;
+  justify-content: center;
+}
+
+.card__container .btn {
+  margin-top: 69px;
+}
+
+.card {
+  background-color: var(--white);
+  width: 30%;
+  height: 354px;
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+  padding: 37px;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after,
+.card::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 50%;
+  background-color: rgb(69, 143, 246, 0.1);
+  transition: all 0.5s;
+}
+
+.card::after {
+  top: 0;
+  left: 0;
+}
+
+.card::before {
+  bottom: 0;
+  right: 0;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:hover:after,
+.card:hover::before {
+  width: 100%;
+}
+
+.card img {
+  margin-bottom: 30px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 0.938rem;
+  line-height: 28px;
+}
+/* ========= start Leading healthcare providers section =============== */
+.healthcare__provider,
+.download__app {
+  gap: 142px;
+}
+
+.img__wrapper {
+  max-width: 650px;
+  max-height: 477px;
+}
+
+.img__wrapper img {
+  width: 100%;
+}
+
+
+
+
+
+/* ========================= end our service style =========================*/
+ /* <!-- =======  start Leading healthcare providers  section ===== --> */
+
+ .img__wrapper {
+  max-width: 650px;
+  max-height: 477px;
+}
+
+.img__wrapper img {
+  width: 100%;
+}
+ /* <!-- =======  end Leading healthcare providers  section ===== --> */
+
+
+
+ /* ========= start Leading healthcare providers section =============== */
+.healthcare__provider,
+.download__app {
+  gap: 142px;
+}
+
+.img__wrapper {
+  max-width: 650px;
+  max-height: 477px;
+}
+
+.img__wrapper img {
+  width: 100%;
+}
+/* ========= start download app section =============== */
+.arrow {
+  margin-left: 14.79px;
+}
+/* ========= start testimonials section =============== */
+.testi__bg {
+  background-image: url(/assests/imgs/element.png);
+  background-position: 90px 270px;
+}
+
+.testimonials {
+  background: url(/assests/imgs/element.png), var(--linear);
+  background-repeat: no-repeat;
+  background-position: top right;
+  min-height: 425px;
+  margin: 0 auto;
+  border-radius: 24px;
+  padding: 64px 118px;
+  margin-bottom: 47px;
+}
+
+.testimonials .section__heading h2 {
+  color: var(--white);
+}
+
+.testimonials .section__heading h2::before {
+  background-color: var(--white);
+}
+
+.testi__wrapper {
+  justify-content: space-evenly;
+  gap: 110px;
+}
+
+.testi__wrapper-img {
+  justify-content: space-evenly;
+  flex: 1;
+  gap: 20px;
+}
+
+.testi__wrapper-img img {
+  width: 133px;
+  height: 133px;
+  border-radius: 50%;
+  background-color: var(--white);
+  padding: 4px;
+}
+
+.content p {
+  color: var(--rgba);
+  font-size: 1.125rem;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+.testi__wrapper-text {
+  flex: 1;
+  font-weight: 400;
+  font-size: 1.188rem;
+  line-height: 30px;
+  color: var(--rgba);
+}
+
+.slider {
+  justify-content: center;
+}
+
+.slider img {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.right__arrow:hover {
+  transform: translateX(10px);
+}
+
+.left__arrow:hover {
+  transform: translateX(-10px);
+}
+
+.dots {
+  gap: 18px;
+  margin: 0 92px;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-color);
+  opacity: 0.3;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dots span.active,
+.dots span:hover {
+  opacity: 1;
+}
+/* ===== start our latest section ==== */
+.our__latest {
+  background-image: url("/assets/images/imgs/element-service.png");
+  background-position: 1100px 100px;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.serv__dots {
+  position: absolute;
+  left: 10%;
+  top: 11%;
+  z-index: -1;
+}
+.box__container {
+  gap: 34px;
+  margin-top: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 30%;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 72px;
+  transition: all 0.3s;
+}
+.box:hover {
+  transform: scale(1.1);
+}
+
+.box__img-container {
+  overflow: hidden;
+  max-width: 409px;
+  max-height: 272px;
+}
+
+.box__img-container img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.box__img-container:hover img {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.box__content {
+  padding: 21px 51px 35px 33px;
+}
+
+.box__content h3 {
+  font-size: 1.313rem;
+  line-height: 32px;
+  margin-bottom: 12px;
+}
+
+.box__content p {
+  font-size: 1rem;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.box__content a {
+  color: var(--main-color);
+  font-size: 1.063rem;
+  line-height: 28px;
+  font-weight: 600;
+  gap: 14px;
+}
+
+.box__content img {
+  width: 14px;
+  height: 9px;
+  transition: all 0.3s;
+}
+
+.box__content a:hover img {
+  transform: translateX(10px);
+}
+/* ===== start footer section ==== */
+.footer {
+  background-image: url(../images/imgs/elementfooter.png),
+    linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  padding: 90px 0;
+}
+
+.footer__content {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: var(--white);
+  
+}
+
+.copyright h2 {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.copyright h2 span {
+  display: inline-flex;
+  background-color: var(--white);
+  color: var(--main-color);
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  justify-content: center;
+  font-size: 1.625rem;
+  font-weight: 700;
+  margin: 22px 12px 21px 0;
+}
+
+.copyright p {
+  width: 391px;
+  margin-bottom: 31px;
+  color: var(--rgba);
+  font-size: 16px;
+}
+
+.footer__content h3 {
+  color: var(--white);
+  font-size: 1.25rem;
+  line-height: 60px;
+}
+
+.footer li {
+  padding: 12px 0;
+  font-size: 1rem;
+  color: var(--rgba);
+}
